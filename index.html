@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Car Dealer App</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Car Dealer App</h1>
+
+            <div class="dropdowns">
+                <label for="car-type">Select Car Type:</label>
+                <select id="car-type">
+                    <option>Ferrari</option>
+                    <option>Lamborghini</option>
+                    <option>Mustang</option>
+                </select>
+
+                <label for="car-color">Select Car Color:</label>
+                <select id="car-color">
+                </select>
+            </div>
+
+            <div class="insurance">
+                <p>Select Insurance Plan:</p>
+                <label>
+                    <input type="radio" name="insurance" value="no-insurance" />
+                    No Insurance
+                </label>
+                <label>
+                    <input
+                        type="radio"
+                        name="insurance"
+                        value="3-year"
+                        checked
+                    />
+                    3-year insurance
+                </label>
+            </div>
+
+            <div class="car-image">
+                <img id="car-image" src="" alt="Car Image" />
+            </div>
+
+            <div class="order-description">
+                <p>Order Description:</p>
+                <textarea id="order-description" readonly></textarea>
+            </div>
+        </div>
+
+        <script src="scripts.js"></script>
+    </body>
+</html>
